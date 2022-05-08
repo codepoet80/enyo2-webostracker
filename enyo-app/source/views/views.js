@@ -14,23 +14,15 @@ enyo.kind({
 			{name: "toolTitle", content: "webOS Tracker" },
 		]},
 		{kind: "Panels", name:"contentPanels", fit: true, classes:"app-panels",  narrowFit:false, arrangerKind: "CollapsingArranger", wrap: false, components: [
-			{kind: "FittableRows", name:"itemList", classes:"listAreaStyles", fit:true, components: [
-				/*
-				{name: 'list', kind: 'List', count: 20000, multiSelect: false, classes: 'enyo-fit list-sample-list', onSetupItem: 'setupItem', components: [
-					{name: 'item', classes: 'list-sample-item enyo-border-box', components: [
-						{name: 'index', classes: 'list-sample-index'},
-						{name: 'name'}
-					]}
-				]},
-				*/
-				{kind: "List", name:"list", count:data.devices.length, fit:true, classes: "listStyles", onSetupItem: "setupItem", multiSelect:false, reorderable: false, enableSwipe: false,
+			{kind: "FittableRows", name:"itemList", classes:"list-devices-list", fit:true, components: [
+				{kind: "List", name:"list", count:data.devices.length, fit:true, classes: "list-devices", onSetupItem: "setupItem", multiSelect:false, reorderable: false, enableSwipe: false,
 					components: [
 						{name: 'item', kind: 'DeviceItem', classes: 'list-devices-item enyo-border-box',}
 					],
 				},
 				{kind: "onyx.Toolbar", classes:"toolbar", components: [
 					{kind: 'onyx.Grabber', ondragstart: 'grabberDragstart', ondrag: 'grabberDrag', ondragfinish: 'grabberDragFinish'},
-					{kind: "onyx.Button", content: "Load Devices", ontap: "loadDevicesTap"}
+					/*{kind: "onyx.Button", content: "Load Devices", ontap: "loadDevicesTap"}*/
 				]},
 			]},
 			
@@ -70,7 +62,7 @@ enyo.kind({
 	published: {
 	},
 	components: [
-		{name: 'deviceIcon', kind: 'Image', classes: 'list-devices-avatar'},
+		{name: 'deviceIcon', kind: 'Image', classes: 'list-devices-icon'},
 		{components: [
 			{name: 'deviceName'},
 		]},
