@@ -55,7 +55,7 @@ if [ $webOS -eq 1 ]; then
     mv $mydir/enyo-app/deploy/bin/*.ipk $mydir/bin/
 fi
 
-if [ $www -eq 1]; then
+if [ $www -eq 1 ]; then
     echo "Building for www..."
     cp $mydir/cordova-www.js $mydir/enyo-app/cordova.js -f
     $mydir/enyo-app/tools/deploy.sh $verbose
