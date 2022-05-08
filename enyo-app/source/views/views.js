@@ -27,7 +27,7 @@ enyo.kind({
 			]},
 			
 			{kind: "FittableRows", name:"body", classes:"detailAreaStyles", fit:true, components: [
-				{name: "main", classes: "detailAreaBodyStyles",fit:true, allowHtml: true},
+				{kind: "DeviceDetails", name: "details", classes: "details-area", fit:true },
 				{kind: "onyx.Toolbar", classes:"toolbar", components: [
 					{kind: 'onyx.Grabber', ondragstart: 'grabberDragstart', ondrag: 'grabberDrag', ondragfinish: 'grabberDragFinish'},
 				]},
@@ -41,25 +41,28 @@ enyo.kind({
 	},
 	setupItem: function(inSender, inEvent) {
 		var i = inEvent.index;
-		var n = data.devices[i];
-		this.$.item.setDeviceDetails(n.name, n.icon);
+		var selectedDevice = data.devices[i];
+		this.$.item.setDeviceDetails(selectedDevice.name, selectedDevice.icon);
 		//Handle item selection
 		this.$.item.setSelected(inSender.isSelected(i));
 		if (inSender.isSelected(i)) {
-			this.$.main.setContent(n.name + " was tapped.<br/>");
-			this.$.main.addContent("<img height='300' src='" + n.photo + "'><br/>");
-			this.$.main.addContent(JSON.stringify(n.data));
+			this.$.details.setDevice(selectedDevice);
 		}
 		return true;
 	},
 
 });
 /* Custom Kinds */
+/* Device List Item*/
 enyo.kind({
 	name: 'DeviceItem',
 	events: {
+		//Custom events
+		// See: http://sdk.webosarchive.com/docs/docs.html#dev-guide/enyo/events.html
 	},
 	published: {
+		//Properties
+		// See: http://sdk.webosarchive.com/docs/docs.html#dev-guide/enyo/published-properties.html
 	},
 	components: [
 		{name: 'deviceIcon', kind: 'Image', classes: 'list-devices-icon'},
@@ -67,6 +70,7 @@ enyo.kind({
 			{name: 'deviceName'},
 		]},
 	],
+	//Public functions
 	setDeviceDetails: function(name, iconPath) {
 		this.$.deviceName.setContent(name);
 		this.$.deviceIcon.setSrc(iconPath);
@@ -75,3 +79,25 @@ enyo.kind({
 		this.addRemoveClass('list-devices-item-selected', inSelected);
 	},
 });
+/* Device Details Panel */
+enyo.kind({
+	name: 'DeviceDetails',
+	event: {
+		//Custom events
+		// See: http://sdk.webosarchive.com/docs/docs.html#dev-guide/enyo/events.html
+	},
+	published: {
+		//Properties
+		// See: http://sdk.webosarchive.com/docs/docs.html#dev-guide/enyo/published-properties.html
+	},
+	components: [
+		{name: "main", allowHtml: true},
+		//TODO: More pretty layout panels and stuff
+	],
+	//Public functions
+	setDevice: function(selectedDevice) {
+		this.$.main.setContent(selectedDevice.name + " was tapped.<br/>");
+		this.$.main.addContent("<img height='300' src='" + selectedDevice.photo + "'><br/>");
+		this.$.main.addContent(JSON.stringify(selectedDevice.data));
+	}
+})
