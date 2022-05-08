@@ -1,0 +1,11 @@
+{
+	"id": "eu.weboslives.webostracker",
+	"version": "1.0.0",
+	"vendor": "Nomad84",
+	"type": "web",
+	"main": "index.html",
+	"title": "webOS Tracker",
+	"splashicon": "icon.png",
+	"icon": "icon.png",
+	"uiRevision": 2
+}
