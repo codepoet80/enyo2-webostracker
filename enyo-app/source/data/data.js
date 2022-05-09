@@ -16,7 +16,7 @@ this.data = {
 		{
 			name: "Palm Pixi",
 			icon: "assets/palmpixi-icon.png",
-			photo: "assets/palmpixi.jpg",
+			photo: "assets/palmpixi.png",
 			specs: [
 				{"name":"Screen Size","value":"2.63 inches"},
 				{"name":"Screen Resolution","value":"320x400"},
@@ -29,7 +29,7 @@ this.data = {
 		{
 			name: "Palm Pixi Plus",
 			icon: "assets/palmpixi-icon.png",
-			photo: "assets/palmpixi.jpg",
+			photo: "assets/palmpixi.png",
 			specs: [
 				{"name":"Screen Size","value":"2.63 inches"},
 				{"name":"Screen Resolution","value":"320x400"},
@@ -42,7 +42,7 @@ this.data = {
 		{ 
 			name: "Palm Pre Plus",
 			icon: "assets/palmpreplus-icon.png",
-			photo: "assets/palmpreplus.jpg",
+			photo: "assets/palmpreplus.png",
 			specs: [
 				{"name":"Screen Size","value":"3.1 inches"},
 				{"name":"Screen Resolution","value":"320x480"},
