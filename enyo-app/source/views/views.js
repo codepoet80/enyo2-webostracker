@@ -62,7 +62,7 @@ enyo.kind({
 
 /** Device List Item **/
 enyo.kind({
-	name: 'DeviceItem',
+	name: "DeviceItem",
 	events: {
 		//Custom events
 		// See: http://sdk.webosarchive.com/docs/docs.html#dev-guide/enyo/events.html
@@ -72,9 +72,9 @@ enyo.kind({
 		// See: http://sdk.webosarchive.com/docs/docs.html#dev-guide/enyo/published-properties.html
 	},
 	components: [
-		{name: 'deviceIcon', kind: 'Image', classes: 'list-devices-icon'},
+		{name: "deviceIcon", kind: "Image", classes: "list-devices-icon"},
 		{components: [
-			{name: 'deviceName'},
+			{name: "deviceName"},
 		]},
 	],
 	//Public functions
@@ -83,22 +83,47 @@ enyo.kind({
 		this.$.deviceIcon.setSrc(iconPath);
 	},
 	setSelected: function(inSelected) {
-		this.addRemoveClass('list-devices-item-selected', inSelected);
+		this.addRemoveClass("list-devices-item-selected", inSelected);
 	},
 });
 
 /** Device Details Panel **/
 enyo.kind({
-	name: 'DeviceDetails',
+	kind: "Scroller",
+	name: "DeviceDetails",
+	currentDevice: null,
 	event: { },
 	published: { },
 	components: [
 		{name: "main", allowHtml: true},
-		//TODO: More pretty layout panels and stuff
+		{kind: "onyx.Groupbox", components: [
+			{kind: "onyx.GroupboxHeader", content: "Specifications"},
+			/* TODO: figure out why I have to hard-code the list height */
+			{kind: "List", name:"list", style: "height:200px", onSetupItem: "setupItem", multiSelect:false, reorderable: false, enableSwipe: false, components: [
+				{name:"spec", style: "padding: 8px;border-bottom:1px solid gray;"}
+			]},
+		]},
 	],
 	setDevice: function(selectedDevice) {
-		this.$.main.setContent(selectedDevice.name + " was tapped.<br/>");
+		this.currentDevice = selectedDevice;
+		this.$.main.setContent("<b>" + selectedDevice.name + "</b><br/>");
 		this.$.main.addContent("<img height='300' src='" + selectedDevice.photo + "'><br/>");
-		this.$.main.addContent(JSON.stringify(selectedDevice.data));
-	}
+		if (this.currentDevice) {
+			enyo.log("count is: " + this.currentDevice.specs.length);
+			this.$.list.setCount(this.currentDevice.specs.length);
+			this.$.list.reset();
+		}
+	},
+	setupItem: function(inSender, inEvent) {
+		enyo.log("building spec list!");
+		if (this.currentDevice) {
+			enyo.log("count is: " + this.currentDevice.specs.length);
+			//this.$.list.setCount(this.currentDevice.specs.length);
+			var i = inEvent.index;
+			var deviceSpec = this.currentDevice.specs[i];
+			enyo.log("showing " + deviceSpec.name + ": " + deviceSpec.value);
+			this.$.spec.setContent(deviceSpec.name + ": " + deviceSpec.value);
+		}
+		return true;
+	},
 })
