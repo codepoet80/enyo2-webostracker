@@ -27,12 +27,13 @@ this.data = {
 			]
 		},
 		{ 
-			name: "HP Touchpad 16GB",
+			name: "HP Touchpad (Black)",
 			icon: "assets/touchpad-icon.png",
 			photo: "assets/touchpad.jpg",
 			specs: [
 				{"name":"Screen Size","value":"9.7 inches"},
 				{"name":"Screen Resolution","value":"1024x768"},
+				{"name":"Storage","value":"16GB or 32GB"},
 				{"name":"Default OS","value":"webOS 3.0.0"},
 				{"name":"Max OS","value":"webOS 3.0.5"},
 			]
