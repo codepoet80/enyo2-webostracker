@@ -1,12 +1,18 @@
-## About
+## About the App
 
-This bootplate is a template for a minimal Enyo2 and Onyx web application.
-You would normally use this to setup your local environment then go and modify the
-files to build your own application.
+This app provides details about legacy mobile webOS devices from Palm, and later, HP.
+
+The main code of the app is in `enyo-app\source\views\view.js`
+
+To modify/add new devices, modify the data file at `enyo-app\source\data\data.js` and add new images at `enyo-app\source\assets`.
+
+## About the App Template
+
+This app is based on a "bootplate" for Enyo2: [https://github.com/codepoet80/enyo2-bootplate](https://github.com/codepoet80/enyo2-bootplate).
 
 Enyo2 (aka EnyoJS) was an open-source Javascript framework that had its origins on the Palm/HP TouchPad, but was updated for Open WebOS and other platforms through [2018](http://nightly.enyojs.com/enyo-nightly-20180402014451/sampler/dist/), before being replaced with EnactJS.
 
-This fork stops at version 2.5.1 to maintain compatibility with legacy webOS. You can download a Sampler of its capabilities from the [enyo2-sampler](https://github.com/codepoet80/enyo2-sampler) repo, or view it online via [webOS Archive](http://www.webosarchive.com/enyo2sampler).
+The bootplate stops at version 2.5.1 to maintain compatibility with legacy webOS. You can download a Sampler of its capabilities from the [enyo2-sampler](https://github.com/codepoet80/enyo2-sampler) repo, or view it online via [webOS Archive](http://www.webosarchive.com/enyo2sampler).
 
 You can learn more about legacy webOS at [webOS Archive](http://www.webosarchive.com/) or by exploring my other repos.
 

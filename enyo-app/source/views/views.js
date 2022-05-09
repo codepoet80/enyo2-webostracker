@@ -8,6 +8,9 @@ enyo.kind({
 	name: "webosTracker.MainView",
 	kind: "FittableRows",
 	fit: true,
+	// UI layout panels and elements
+	//	See: examples with code here: http://www.webosarchive.com/enyo2sampler/ 
+	//	Note: webOS mobile uses the "onyx" widgets, webOS TVs use the "moonstone" widgets
 	components:[
 		{kind: "onyx.Toolbar", classes:"toolbar", components: [
 			/*{tag: "img", classes:"toolbarIcon", attributes: {src: "icon.png"}},*/
@@ -35,13 +38,11 @@ enyo.kind({
 			
 		]},	
 	],
-	loadDevicesTap: function(inSender, inEvent) {
-		this.$.list.reset();
-		
-	},
+	//This function is called by the framework to populate the list
+	//	You can call it manually by invoking this.$.list.reset();
 	setupItem: function(inSender, inEvent) {
 		var i = inEvent.index;
-		var selectedDevice = data.devices[i];
+		var selectedDevice = data.devices[i];	//data comes from the data/data.js file
 		this.$.item.setDeviceDetails(selectedDevice.name, selectedDevice.icon);
 		//Handle item selection
 		this.$.item.setSelected(inSender.isSelected(i));
@@ -50,10 +51,16 @@ enyo.kind({
 		}
 		return true;
 	},
-
+	/*
+	loadDevicesTap: function(inSender, inEvent) {
+		this.$.list.reset();
+	},
+	*/
 });
+
 /* Custom Kinds */
-/* Device List Item*/
+
+/** Device List Item **/
 enyo.kind({
 	name: 'DeviceItem',
 	events: {
@@ -79,22 +86,16 @@ enyo.kind({
 		this.addRemoveClass('list-devices-item-selected', inSelected);
 	},
 });
-/* Device Details Panel */
+
+/** Device Details Panel **/
 enyo.kind({
 	name: 'DeviceDetails',
-	event: {
-		//Custom events
-		// See: http://sdk.webosarchive.com/docs/docs.html#dev-guide/enyo/events.html
-	},
-	published: {
-		//Properties
-		// See: http://sdk.webosarchive.com/docs/docs.html#dev-guide/enyo/published-properties.html
-	},
+	event: { },
+	published: { },
 	components: [
 		{name: "main", allowHtml: true},
 		//TODO: More pretty layout panels and stuff
 	],
-	//Public functions
 	setDevice: function(selectedDevice) {
 		this.$.main.setContent(selectedDevice.name + " was tapped.<br/>");
 		this.$.main.addContent("<img height='300' src='" + selectedDevice.photo + "'><br/>");
