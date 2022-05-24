@@ -137,7 +137,7 @@ this.data = {
                         photo: "assets/hppre3.png",
                         specs: [
                                 {"name":"Introduced","value":"February 9, 2011 (Shipped: August 17, 2011)"},
-                                {"name":"Codename","value":"P103, hp-manta"},
+                                {"name":"Codename","value":"P103, hp-manta, windsor"},
                                 {"name":"Colors","value":"Black, White (rare)"},
                                 {"name":"Weight and Dimensions","value":"155 g (5.5 oz), H: 111 mm (4.4 in), W: 64 mm (2.5 in), D: 16 mm (0.63 in)"},
                                 {"name":"Screen Size","value":"3.58 in (91 mm)"},
@@ -146,7 +146,7 @@ this.data = {
                                 {"name":"RAM","value":"512 MB"},
                                 {"name":"Storage","value":"8 GB or 16 GB"},
                                 {"name":"Default OS","value":"webOS 2.2.0"},
-                                {"name":"Max OS","value":"webOS 2.2.4"},
+                                {"name":"Max OS","value":"webOS 2.2.4 (unofficial: 2.2.5)"},
                                 {"name":"History","value":"The HP Pre 3 was announced on February 9, 2011, at the HP webOS 'Think Beyond' event held at the Fort Mason Center in San Francisco alongside the Veer and TouchPad. It was commercially released in the United Kingdom on August 17, 2011. It is the successor to the Palm Pre 2 and earlier Pre Plus and Pre models. Source: Wikipedia"},
                         ]
                 },
@@ -187,7 +187,7 @@ this.data = {
                         ]
                 },
 		{
-                        name: "HP 'WindsorNot' (WIP)",
+                        name: "HP 'WindsorNot'",
                         icon: "assets/windsornot-icon.png",
                         photo: "assets/windsornot.png",
                         specs: [
