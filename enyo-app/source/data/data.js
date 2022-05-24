@@ -202,7 +202,7 @@ this.data = {
                                 {"name":"Storage","value":"8 GB"},
                                 {"name":"Default OS","value":"webOS 3"},
                                 {"name":"Max OS","value":"webOS 3"},
-                                {"name":"History","value":""},
+                                {"name":"History","value":"<a href=\"https://www.webosnation.com/windsornot-webos-slate-smartphone-never-was\">The webOS slate smartphone that never was.</a>"},
                         ]
                 },
 	]
