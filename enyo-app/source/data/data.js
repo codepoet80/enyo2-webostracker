@@ -191,7 +191,7 @@ this.data = {
                         icon: "assets/windsornot-icon.png",
                         photo: "assets/windsornot.png",
                         specs: [
-                                {"name":"Introduced","value":"Unreleased"},
+                                {"name":"Introduced","value":"Unreleased (planned for 2011, this was moved to 2012"},
                                 {"name":"Codename","value":"WindsorNot, stingray"},
                                 {"name":"Colors","value":"Black"},
                                 {"name":"Weight and Dimensions","value":"Unknown"},
@@ -202,7 +202,26 @@ this.data = {
                                 {"name":"Storage","value":"8 GB"},
                                 {"name":"Default OS","value":"webOS 3"},
                                 {"name":"Max OS","value":"webOS 3"},
-                                {"name":"History","value":"<a href=\"https://www.webosnation.com/windsornot-webos-slate-smartphone-never-was\">The webOS slate smartphone that never was.</a>"},
+                                {"name":"History","value":"The webOS slate smartphone that never was."},
+                        ]
+                },
+		{
+                        name: "HP 'Mako' (WIP)",
+                        icon: "assets/mako-icon.png",
+                        photo: "assets/mako.png",
+                        specs: [
+                                {"name":"Introduced","value":"Unreleased (planned for 2012)"},
+                                {"name":"Codename","value":"Mako"},
+                                {"name":"Colors","value":"Black"},
+                                {"name":"Weight and Dimensions","value":"Unknown"},
+                                {"name":"Screen Size","value":"? in (? mm)"},
+                                {"name":"Screen Resolution","value":"?x?"},
+                                {"name":"Chipset","value":"?"},
+                                {"name":"RAM","value":"? MB"},
+                                {"name":"Storage","value":"? GB"},
+                                {"name":"Default OS","value":"webOS Nova Main"},
+                                {"name":"Max OS","value":"webOS Nova Main"},
+                                {"name":"History","value":"TBD"},
                         ]
                 },
 	]
