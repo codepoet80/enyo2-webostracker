@@ -187,7 +187,7 @@ this.data = {
                         ]
                 },
 		{
-                        name: "HP 'WindsorNot'",
+                        name: "HP \"WindsorNo\" (WIP)",
                         icon: "assets/windsornot-icon.png",
                         photo: "assets/windsornot.png",
                         specs: [
