@@ -2,7 +2,7 @@ this.data = {
 	devices: [
 		{
 			name: "Palm Pre",
-			icon: "assets/palmpre-icon.png",
+			icon: "assets/ml-pre-small.png",
 			photo: "assets/palmpre.jpg",
 			specs: [
 				{"name":"Introduced","value":"January 8, 2009 (Shipped: June 6, 2009)"},
@@ -21,7 +21,7 @@ this.data = {
 		},
 		{
 			name: "Palm Pixi",
-			icon: "assets/palmpixi-icon.png",
+			icon: "assets/ml-pixi-small.png",
 			photo: "assets/palmpixi.png",
 			specs: [
 				{"name":"Introduced","value":"September 8, 2009 (Shipped: November 15, 2009)"},
@@ -40,7 +40,7 @@ this.data = {
 		},
 		{
 			name: "Palm Pre Plus",
-			icon: "assets/palmpreplus-icon.png",
+			icon: "assets/ml-preplus-small.png",
 			photo: "assets/palmpreplus.png",
 			specs: [
 				{"name":"Introduced","value":"January 7, 2010 (Shipped: January 25, 2010)"},
@@ -58,7 +58,7 @@ this.data = {
 		},
 		{
 			name: "Palm Pixi Plus",
-			icon: "assets/palmpixi-icon.png",
+			icon: "assets/ml-pixiplus-small.png",
 			photo: "assets/palmpixi.png",
 			specs: [
 				{"name":"Introduced","value":"January 7, 2010 (Shipped: January 25, 2010)"},
@@ -77,7 +77,7 @@ this.data = {
 		},
 		{
                         name: "Palm Pre 2",
-                        icon: "assets/palmpre2-icon.png",
+                        icon: "assets/ml-pre2-small.png",
                         photo: "assets/palmpre2.png",
                         specs: [
                                 {"name":"Introduced","value":"October 19, 2010 (Shipped: October 22, 2010)"},
@@ -96,7 +96,7 @@ this.data = {
                 },
 		{
                         name: "HP Veer",
-                        icon: "assets/hpveer-icon.gif",
+                        icon: "assets/ml-veer-small.png",
                         photo: "assets/hpveer.png",
                         specs: [
                                 {"name":"Introduced","value":"February 9, 2011 (Shipped: May 15, 2011)"},
@@ -115,7 +115,7 @@ this.data = {
                 },
 		{ 
 			name: "HP TouchPad",
-			icon: "assets/touchpad-icon.png",
+			icon: "assets/ml-touchpad-small.png",
 			photo: "assets/hptouchpad.png",
 			specs: [
 				{"name":"Introduced","value":"February 9, 2011 (Shipped: July 1, 2011)"},
@@ -133,7 +133,7 @@ this.data = {
 		},
 		{
                         name: "HP Pre 3",
-                        icon: "assets/hppre3-icon.png",
+                        icon: "assets/ml-pre3-small.png",
                         photo: "assets/hppre3.png",
                         specs: [
                                 {"name":"Introduced","value":"February 9, 2011 (Shipped: August 17, 2011)"},
