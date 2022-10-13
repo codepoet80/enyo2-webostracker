@@ -12,9 +12,9 @@ This app is based on a "bootplate" for Enyo2: [https://github.com/codepoet80/eny
 
 Enyo2 (aka EnyoJS) was an open-source Javascript framework that had its origins on the Palm/HP TouchPad, but was updated for Open WebOS and other platforms through [2018](http://nightly.enyojs.com/enyo-nightly-20180402014451/sampler/dist/), before being replaced with EnactJS.
 
-The bootplate stops at version 2.5.1 to maintain compatibility with legacy webOS. You can download a Sampler of its capabilities from the [enyo2-sampler](https://github.com/codepoet80/enyo2-sampler) repo, or view it online via [webOS Archive](http://www.webosarchive.com/enyo2sampler).
+The bootplate stops at version 2.5.1 to maintain compatibility with legacy webOS. You can download a Sampler of its capabilities from the [enyo2-sampler](https://github.com/codepoet80/enyo2-sampler) repo, or view it online via [webOS Archive](http://www.webosarchive.org/enyo2sampler).
 
-You can learn more about legacy webOS at [webOS Archive](http://www.webosarchive.com/) or by exploring my other repos.
+You can learn more about legacy webOS at [webOS Archive](http://www.webosarchive.org/) or by exploring my other repos.
 
 ## Downloading
 

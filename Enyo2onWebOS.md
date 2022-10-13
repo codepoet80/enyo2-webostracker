@@ -4,7 +4,7 @@
 
 ### Pre-requisites
 
-webOS Support requires the [legacy webOS SDK](http://sdk.webosarchive.com).
+webOS Support requires the [legacy webOS SDK](http://sdk.webosarchive.org).
 
 ### Cordova
 
@@ -35,4 +35,4 @@ This website describes managing alternatives: [https://www.fosstechnix.com/insta
 
 ## Debugging
 
-- Use `palm-log` and other [legacy webOS SDK Command line tools](http://sdk.webosarchive.com/docs/docs.html#dev-guide/tools/command-line-tools.html) to debug as normal.
+- Use `palm-log` and other [legacy webOS SDK Command line tools](http://sdk.webosarchive.org/docs/docs.html#dev-guide/tools/command-line-tools.html) to debug as normal.
