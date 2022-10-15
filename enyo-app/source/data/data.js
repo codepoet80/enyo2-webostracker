@@ -153,8 +153,8 @@ this.data = {
                 },
 		{
                         name: "HP TouchPad 4G (Not released)",
-                        icon: "assets/touchpad4g-icon.png",
-                        photo: "assets/touchpad4g.jpg",
+                        icon: "assets/ml-touchpad-small.png",
+                        photo: "assets/touchpad.png",
                         specs: [
                                 {"name":"Introduced","value":"February 9, 2011 (Shipped: July 1, 2011)"},
                                 {"name":"Codename","value":"hp-tenderloin, topaz"},
@@ -177,11 +177,11 @@ this.data = {
                                 {"name":"Introduced","value":"February 9, 2011 (Shipped: July 1, 2011)"},
                                 {"name":"Codename","value":"hp-shortloin, opal"},
                                 {"name":"Colors","value":"Black, White (rare)"},
-                                {"name":"Weight and Dimensions","value":"Unknown g (Unknown oz), W: Unknown mm (Unknown in), H: Unknown mm (Unknown in), D: Unknown mm (Unknown in)"},
+                                {"name":"Weight and Dimensions","value":"499 g (17.6 oz), W: Unknown mm (Unknown in), H: Unknown mm (Unknown in), D: Unknown mm (Unknown in)"},
                                 {"name":"Screen Size","value":"6.95 in (177 mm)"},
                                 {"name":"Screen Resolution","value":"1024x768"},
                                 {"name":"Chipset","value":"Qualcomm Snapdragon S3 APQ8060, CPU: 1.5 GHz dual-core ARM-based Scorpion, GPU: Adreno 220"},
-                                {"name":"Storage","value":"32 GB or 64 GB"},
+                                {"name":"Storage","value":"16 GB, 32 GB, and 64 GB"},
                                 {"name":"Default OS","value":"webOS 3.0.0"},
                                 {"name":"Max OS","value":"webOS 3.0.5"},
                                 {"name":"History","value":"The HP TouchPad Go was an unreleased smaller TouchPad variant. It had a smaller, 7 inch screen and a 5 megapixel rear-facing camera. It also included integrated A-GPS and AT&T 3.5G HSPA+ wireless mobile broadband capabilities. This model was produced in very small quantities and it was only available to HP employees. Source: Wikipedia and webOS Nation"},
@@ -209,7 +209,7 @@ this.data = {
 		{
                         name: "HP 'Mako' (Planned)",
                         icon: "assets/mako-icon.png",
-                        photo: "assets/mako.png",
+                        photo: "assets/mako.jpg",
                         specs: [
                                 {"name":"Introduced","value":"Unreleased (planned for 2012)"},
                                 {"name":"Codename","value":"Mako"},
