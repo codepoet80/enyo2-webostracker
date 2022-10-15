@@ -2,7 +2,7 @@ this.data = {
 	devices: [
 		{
 			name: "Palm Pre",
-			icon: "assets/palmpre-icon.png",
+			icon: "assets/ml-pre-small.png",
 			photo: "assets/palmpre.jpg",
 			specs: [
 				{"name":"Introduced","value":"January 8, 2009 (Shipped: June 6, 2009)"},
@@ -21,7 +21,7 @@ this.data = {
 		},
 		{
 			name: "Palm Pixi",
-			icon: "assets/palmpixi-icon.png",
+			icon: "assets/ml-pixi-small.png",
 			photo: "assets/palmpixi.png",
 			specs: [
 				{"name":"Introduced","value":"September 8, 2009 (Shipped: November 15, 2009)"},
@@ -40,7 +40,7 @@ this.data = {
 		},
 		{
 			name: "Palm Pre Plus",
-			icon: "assets/palmpreplus-icon.png",
+			icon: "assets/ml-preplus-small.png",
 			photo: "assets/palmpreplus.png",
 			specs: [
 				{"name":"Introduced","value":"January 7, 2010 (Shipped: January 25, 2010)"},
@@ -54,11 +54,12 @@ this.data = {
 				{"name":"Storage","value":"16 GB"},
 				{"name":"Default OS","value":"webOS 1.4.2"},
 				{"name":"Max OS","value":"webOS 2.1.0"},
+                                {"name":"History","value":"The Palm Pre Plus was announced at CES 2010. Differences from the original Palm Pre included the removal of the physical center button, increased storage (from 8 GB to 16 GB), doubling the RAM from 256 MB to 512 MB, and the Touchstone backcover was included as default. The keyboard and slider mechanism were also refined. In the US, it was initially sold exclusively by Verizon Wireless. On March 22, 2010, Palm announced that it will release the Pre Plus on the AT&T network. O2 launched the Pre Plus on May 16, 2010. Source: Wikipedia"},
 			]
 		},
 		{
 			name: "Palm Pixi Plus",
-			icon: "assets/palmpixi-icon.png",
+			icon: "assets/ml-pixiplus-small.png",
 			photo: "assets/palmpixi.png",
 			specs: [
 				{"name":"Introduced","value":"January 7, 2010 (Shipped: January 25, 2010)"},
@@ -77,7 +78,7 @@ this.data = {
 		},
 		{
                         name: "Palm Pre 2",
-                        icon: "assets/palmpre2-icon.png",
+                        icon: "assets/ml-pre2-small.png",
                         photo: "assets/palmpre2.png",
                         specs: [
                                 {"name":"Introduced","value":"October 19, 2010 (Shipped: October 22, 2010)"},
@@ -91,12 +92,12 @@ this.data = {
                                 {"name":"Storage","value":"16 GB"},
                                 {"name":"Default OS","value":"webOS 2.0.0"},
                                 {"name":"Max OS","value":"webOS 2.2.4"},
-				{"name":"History","value":"The Palm Pre 2, styled as palm prē 2, is a slider smartphone designed and marketed by Palm, Inc., and Hewlett-Packard with a multi-touch screen and a physical sliding keyboard. It was announced on October 19, 2010, with an initial launch date of October 22, 2010, on French carrier SFR. It was also announced that the Pre 2 would be coming to United States carrier Verizon Wireless, Rogers Wireless in Canada, and also as an unlocked UMTS developer phone. Source: Wikipedia"},
+				{"name":"History","value":"The Palm Pre 2, styled as palm prē 2, is a slider smartphone designed and marketed by Palm, Inc. and Hewlett-Packard. It was announced on October 19, 2010, with an initial launch date of October 22, 2010, on French carrier SFR. It was also announced that the Pre 2 would be coming to United States carrier Verizon Wireless, Rogers Wireless in Canada, and also as an unlocked UMTS developer phone. This was the first phone to ship with webOS 2.0 and flat Gorilla Glass screen (instead of plastic). Other improcements included a faster processor, an upgraded camera, and the removal of the plastic micro-usb cover. Source: Wikipedia"},
                         ]
                 },
 		{
                         name: "HP Veer",
-                        icon: "assets/hpveer-icon.gif",
+                        icon: "assets/ml-veer-small.png",
                         photo: "assets/hpveer.png",
                         specs: [
                                 {"name":"Introduced","value":"February 9, 2011 (Shipped: May 15, 2011)"},
@@ -115,7 +116,7 @@ this.data = {
                 },
 		{ 
 			name: "HP TouchPad",
-			icon: "assets/touchpad-icon.png",
+			icon: "assets/ml-touchpad-small.png",
 			photo: "assets/hptouchpad.png",
 			specs: [
 				{"name":"Introduced","value":"February 9, 2011 (Shipped: July 1, 2011)"},
@@ -125,19 +126,19 @@ this.data = {
 				{"name":"Screen Size","value":"9.7 in (250 mm)"},
 				{"name":"Screen Resolution","value":"1024x768"},
 				{"name":"Chipset","value":"Qualcomm Snapdragon S3 APQ8060, CPU: 1.2 GHz (black) or 1.5 GHz (white) dual-core ARM-based Scorpion, GPU: Adreno 220"},
-				{"name":"Storage","value":"16 GB, 32 GB, and 64 GB (white only)"},
+				{"name":"Storage","value":"16 GB, 32 GB, and 64 GB (white)"},
 				{"name":"Default OS","value":"webOS 3.0.0"},
 				{"name":"Max OS","value":"webOS 3.0.5"},
-				{"name":"History","value":"The HP TouchPad was announced on February 9, 2011, at the webOS 'Think Beyond' event held at the Fort Mason Center in San Francisco alongside the HP Veer and HP Pre 3."},
+				{"name":"History","value":"The HP TouchPad was announced on February 9, 2011, at the webOS 'Think Beyond' event held at the Fort Mason Center in San Francisco alongside the HP Veer and HP Pre 3. Initial sales of the device were between 25,000 of 270,000 units, and did not meet HP's expectations, rapidly becoming overshadowed by the launch of the Apple iPad 2 in March. On August 16, 2011, it was reported that Best Buy refused to pay HP for any more TouchPad stock. In Europe, the TouchPad was estimated to have sold 12,000 in its first month of release. In Australia, Harvey Norman who was the exclusive retailer sold about 1,200 units in the four days it was on sale. On August 18, HP announced that it would discontinue all webOS devices. Following the announcement, HP also substantuially cut the price of the tablet in Canada and in the USA (16GB: $99, 32GB: $149). Similar firesales took place in Australia and the UK as well. This made the TouchPad the second most popular tablet for a brief period of time. Source: Wikipedia"},
 			]
 		},
 		{
                         name: "HP Pre 3",
-                        icon: "assets/hppre3-icon.png",
+                        icon: "assets/ml-pre3-small.png",
                         photo: "assets/hppre3.png",
                         specs: [
                                 {"name":"Introduced","value":"February 9, 2011 (Shipped: August 17, 2011)"},
-                                {"name":"Codename","value":"P103, hp-manta"},
+                                {"name":"Codename","value":"P103, hp-manta, windsor"},
                                 {"name":"Colors","value":"Black, White (rare)"},
                                 {"name":"Weight and Dimensions","value":"155 g (5.5 oz), H: 111 mm (4.4 in), W: 64 mm (2.5 in), D: 16 mm (0.63 in)"},
                                 {"name":"Screen Size","value":"3.58 in (91 mm)"},
@@ -146,14 +147,14 @@ this.data = {
                                 {"name":"RAM","value":"512 MB"},
                                 {"name":"Storage","value":"8 GB or 16 GB"},
                                 {"name":"Default OS","value":"webOS 2.2.0"},
-                                {"name":"Max OS","value":"webOS 2.2.4"},
-                                {"name":"History","value":"The HP Pre 3 was announced on February 9, 2011, at the HP webOS 'Think Beyond' event held at the Fort Mason Center in San Francisco alongside the Veer and TouchPad. It was commercially released in the United Kingdom on August 17, 2011. It is the successor to the Palm Pre 2 and earlier Pre Plus and Pre models. Source: Wikipedia"},
+                                {"name":"Max OS","value":"webOS 2.2.4 (unofficial: 2.2.5)"},
+                                {"name":"History","value":"The HP Pre 3 was announced on February 9, 2011, at the HP webOS 'Think Beyond' event held at the Fort Mason Center in San Francisco alongside the Veer and TouchPad. It was commercially released in the United Kingdom on August 17, 2011. The next day, August 18, HP announced that it would be discontinuing all webOS devices, including the Pre 3. The phone was never officially released in the United States, although models eventually were sold through the HP employee store in California, and many of those phones ended up on eBay auctions. This was the highest spec webOS phone ever released. Source: Wikipedia"},
                         ]
                 },
 		{
-                        name: "HP TouchPad 4G (WIP)",
-                        icon: "assets/touchpad4g-icon.png",
-                        photo: "assets/touchpad4g.jpg",
+                        name: "HP TouchPad 4G (Not released)",
+                        icon: "assets/ml-touchpad-small.png",
+                        photo: "assets/touchpad.png",
                         specs: [
                                 {"name":"Introduced","value":"February 9, 2011 (Shipped: July 1, 2011)"},
                                 {"name":"Codename","value":"hp-tenderloin, topaz"},
@@ -161,37 +162,37 @@ this.data = {
                                 {"name":"Weight and Dimensions","value":"740 g (26 oz), W: 240 mm (9.4 in), H: 190 mm (7.5 in), D: 13.7 mm (0.54 in)"},
                                 {"name":"Screen Size","value":"9.7 in (250 mm)"},
                                 {"name":"Screen Resolution","value":"1024x768"},
-                                {"name":"Chipset","value":"Qualcomm Snapdragon S3 APQ8060, CPU: 1.2 GHz (black) or 1.5 GHz (white) dual-core ARM-based Scorpion, GPU: Adreno 220"},
-                                {"name":"Storage","value":"16 GB, 32 GB, and 64 GB (white only)"},
+                                {"name":"Chipset","value":"Qualcomm Snapdragon S3 APQ8060, CPU: 1.5 GHz dual-core ARM-based Scorpion, GPU: Adreno 220"},
+                                {"name":"Storage","value":"32 GB or 64 GB"},
                                 {"name":"Default OS","value":"webOS 3.0.0"},
                                 {"name":"Max OS","value":"webOS 3.0.5"},
-                                {"name":"History","value":"The HP TouchPad was announced on February 9, 2011, at the webOS 'Think Beyond' event held at the Fort Mason Center in San Francisco alongside the HP Veer and HP Pre 3."},
+                                {"name":"History","value":"The HP TouchPad was announced on February 9, 2011, at the webOS 'Think Beyond' event held at the Fort Mason Center in San Francisco alongside the HP Veer and HP Pre 3. This model included integrated A-GPS and AT&T 3.5G HSPA+ wireless mobile broadband capabilities. This model was produced in small quantities and it was only available to HP employees. Source: Wikipedia"},
                         ]
                 },
 		{
-                        name: "HP TouchPad Go (WIP)",
+                        name: "HP TouchPad Go (Not released)",
                         icon: "assets/touchpadgo-icon.png",
                         photo: "assets/touchpadgo.jpg",
                         specs: [
                                 {"name":"Introduced","value":"February 9, 2011 (Shipped: July 1, 2011)"},
-                                {"name":"Codename","value":"opal"},
+                                {"name":"Codename","value":"hp-shortloin, opal"},
                                 {"name":"Colors","value":"Black, White (rare)"},
-                                {"name":"Weight and Dimensions","value":"740 g (26 oz), W: 240 mm (9.4 in), H: 190 mm (7.5 in), D: 13.7 mm (0.54 in)"},
-                                {"name":"Screen Size","value":"9.7 in (250 mm)"},
+                                {"name":"Weight and Dimensions","value":"499 g (17.6 oz), W: Unknown mm (Unknown in), H: Unknown mm (Unknown in), D: Unknown mm (Unknown in)"},
+                                {"name":"Screen Size","value":"6.95 in (177 mm)"},
                                 {"name":"Screen Resolution","value":"1024x768"},
-                                {"name":"Chipset","value":"Qualcomm Snapdragon S3 APQ8060, CPU: 1.2 GHz (black) or 1.5 GHz (white) dual-core ARM-based Scorpion, GPU: Adreno 220"},
-                                {"name":"Storage","value":"16 GB, 32 GB, and 64 GB (white only)"},
+                                {"name":"Chipset","value":"Qualcomm Snapdragon S3 APQ8060, CPU: 1.5 GHz dual-core ARM-based Scorpion, GPU: Adreno 220"},
+                                {"name":"Storage","value":"16 GB, 32 GB, and 64 GB"},
                                 {"name":"Default OS","value":"webOS 3.0.0"},
                                 {"name":"Max OS","value":"webOS 3.0.5"},
-                                {"name":"History","value":"The HP TouchPad was announced on February 9, 2011, at the webOS 'Think Beyond' event held at the Fort Mason Center in San Francisco alongside the HP Veer and HP Pre 3."},
+                                {"name":"History","value":"The HP TouchPad Go was an unreleased smaller TouchPad variant. It had a smaller, 7 inch screen and a 5 megapixel rear-facing camera. It also included integrated A-GPS and AT&T 3.5G HSPA+ wireless mobile broadband capabilities. This model was produced in very small quantities and it was only available to HP employees. Source: Wikipedia and webOS Nation"},
                         ]
                 },
 		{
-                        name: "HP 'WindsorNot' (WIP)",
+                        name: "HP \"WindsorNot\" (Prototype)",
                         icon: "assets/windsornot-icon.png",
                         photo: "assets/windsornot.png",
                         specs: [
-                                {"name":"Introduced","value":"Unreleased"},
+                                {"name":"Introduced","value":"Unreleased (planned for 2011, this was moved to 2012"},
                                 {"name":"Codename","value":"WindsorNot, stingray"},
                                 {"name":"Colors","value":"Black"},
                                 {"name":"Weight and Dimensions","value":"Unknown"},
@@ -202,7 +203,26 @@ this.data = {
                                 {"name":"Storage","value":"8 GB"},
                                 {"name":"Default OS","value":"webOS 3"},
                                 {"name":"Max OS","value":"webOS 3"},
-                                {"name":"History","value":""},
+                                {"name":"History","value":"The webOS slate smartphone that never was. The first webOS phone without a physical keyboard. Also the first webOS phone with webOS 3. This phone was only produced as engineering sample units. There is no known fully functional units. Source: webOS Nation"},
+                        ]
+                },
+		{
+                        name: "HP 'Mako' (Planned)",
+                        icon: "assets/mako-icon.png",
+                        photo: "assets/mako.jpg",
+                        specs: [
+                                {"name":"Introduced","value":"Unreleased (planned for 2012)"},
+                                {"name":"Codename","value":"Mako"},
+                                {"name":"Colors","value":"Black"},
+                                {"name":"Weight and Dimensions","value":"Unknown"},
+                                {"name":"Screen Size","value":"? in (? mm)"},
+                                {"name":"Screen Resolution","value":"?x?"},
+                                {"name":"Chipset","value":"?"},
+                                {"name":"RAM","value":"? MB"},
+                                {"name":"Storage","value":"? GB"},
+                                {"name":"Default OS","value":"webOS Nova Main"},
+                                {"name":"Max OS","value":"webOS Nova Main"},
+                                {"name":"History","value":"TBD"},
                         ]
                 },
 	]
