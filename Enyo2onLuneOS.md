@@ -4,7 +4,7 @@
 
 ### Pre-requisites
 
-LuneOS support requires the [webos-ports-sdk for LuneOS](https://github.com/webOS-ports/webos-ports-sdk) which is installed along-side the [legacy webOS SDK](http://sdk.webosarchive.com).
+LuneOS support requires the [webos-ports-sdk for LuneOS](https://github.com/webOS-ports/webos-ports-sdk) which is installed along-side the [legacy webOS SDK](http://sdk.webosarchive.org).
 
 ### Cordova
 

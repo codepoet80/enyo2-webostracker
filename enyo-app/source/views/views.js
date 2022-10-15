@@ -9,7 +9,7 @@ enyo.kind({
 	kind: "FittableRows",
 	fit: true,
 	// UI layout panels and elements
-	//	See: examples with code here: http://www.webosarchive.com/enyo2sampler/ 
+	//	See: examples with code here: http://www.webosarchive.org/enyo2sampler/ 
 	//	Note: webOS mobile uses the "onyx" widgets, webOS TVs use the "moonstone" widgets
 	components:[
 		{kind: "onyx.Toolbar", classes:"toolbar", components: [
@@ -65,11 +65,11 @@ enyo.kind({
 	name: "DeviceItem",
 	events: {
 		//Custom events
-		// See: http://sdk.webosarchive.com/docs/docs.html#dev-guide/enyo/events.html
+		// See: http://sdk.webosarchive.org/docs/docs.html#dev-guide/enyo/events.html
 	},
 	published: {
 		//Properties
-		// See: http://sdk.webosarchive.com/docs/docs.html#dev-guide/enyo/published-properties.html
+		// See: http://sdk.webosarchive.org/docs/docs.html#dev-guide/enyo/published-properties.html
 	},
 	components: [
 		{name: "deviceIcon", kind: "Image", classes: "list-devices-icon"},
