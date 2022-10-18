@@ -222,7 +222,7 @@ this.data = {
                         status: "Planned",
                         icon: "assets/mako-icon.png",
                         photo: "assets/mako.jpg",
-                        history: "TBD",
+                        history: "HP was also working on a significantly more advanced phone [than the WindsorNot] codenamed \"Mako.\" The Verge obtained a design prototype of the device that reveals a new design direction eschewing the soft, nature-inspired pebble look of the Pre for something much more angular. It was to have a glass front and back, wireless charging, LTE, and a high-resolution screen. In terms of specs, we are told that it was to be about on par with the HTC One X, and had things gone according to plan it would have possibly been released in early 2012, beating the One X to market. Had Palm managed to pull it off, the Mako would have been one of the first Palm devices in a long time to feature competitive performance — albeit in a form that was still thicker than other devices at the time. However, development on the Mako never made it very far, and to our knowledge no working models ever got off the development board, much less into real-world testing. Source: The Verge.",
                         specs: [
                                 {"name":"Introduced","value":"Unreleased (planned for 2012)"},
                                 {"name":"Codename","value":"Mako"},
