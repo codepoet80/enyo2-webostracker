@@ -1,0 +1,12 @@
+.deviceStatus {font-size: smaller;color: dimgray;}
+.title { font-size: 22px; margin-top: 4px; margin-bottom: 12px;}
+.history { display:inline-block; padding:10px; }
+.photo { float:right; margin-left: 10px; height: 250px;}
+.disable-scrollbars::-webkit-scrollbar {
+    background: transparent; /* Chrome/Safari/Webkit */
+    width: 0px;
+  }      
+.disable-scrollbars {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* IE 10+ */
+}
