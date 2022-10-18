@@ -3,8 +3,8 @@ this.data = {
 		{
 			name: "Palm Pre",
                         status: "Released 2009",
-			icon: "assets/ml-pre-small.png",
-			photo: "assets/palmpre.jpg",
+			icon: "assets/pre-icon.png",
+			photo: "assets/pre-photo.jpg",
                         history: "The Pre was launched in the United States of America on June 6, 2009, with Sprint, and later in Canada with Bell Mobility. A GSM version of the original Pre was launched later in 2009 on a number of networks in Europe and in Mexico. Source: Wikipedia",
 			specs: [
 				{"name":"Introduced","value":"January 8, 2009 (Shipped: June 6, 2009)"},
@@ -23,8 +23,8 @@ this.data = {
 		{
 			name: "Palm Pixi",
                         status: "Released 2009",
-			icon: "assets/ml-pixi-small.png",
-			photo: "assets/palmpixi.png",
+			icon: "assets/pixi-icon.png",
+			photo: "assets/pixi-photo.png",
                         history: "The Palm Pixi is a multimedia smartphone, developed by Palm. The device is viewed as a successor to the Palm Centro smartphone and was Palm's second webOS device, after the Palm Pre. It was announced on September 8, 2009, on Palm's official blog and it was released on November 15, 2009, on the Sprint carrier network in the U.S. Source: Wikipedia",
 			specs: [
 				{"name":"Introduced","value":"September 8, 2009 (Shipped: November 15, 2009)"},
@@ -43,8 +43,8 @@ this.data = {
 		{
 			name: "Palm Pre Plus",
                         status: "Released 2010",
-			icon: "assets/ml-preplus-small.png",
-			photo: "assets/palmpreplus.png",
+			icon: "assets/preplus-icon.png",
+			photo: "assets/preplus-photo.png",
                         history: "The Palm Pre Plus was announced at CES 2010. Differences from the original Palm Pre included the removal of the physical center button, increased storage (from 8 GB to 16 GB), doubling the RAM from 256 MB to 512 MB, and the Touchstone backcover was included as default. The keyboard and slider mechanism were also refined. In the US, it was initially sold exclusively by Verizon Wireless. On March 22, 2010, Palm announced that it will release the Pre Plus on the AT&T network. O2 launched the Pre Plus on May 16, 2010. Source: Wikipedia",
 			specs: [
 				{"name":"Introduced","value":"January 7, 2010 (Shipped: January 25, 2010)"},
@@ -63,8 +63,8 @@ this.data = {
 		{
 			name: "Palm Pixi Plus",
                         status: "Released 2010",
-			icon: "assets/ml-pixiplus-small.png",
-			photo: "assets/palmpixi.png",
+			icon: "assets/pixiplus-icon.png",
+			photo: "assets/pixi-photo.png",
                         history: "The Pixi Plus was announced at CES in 2010. The Plus versions include WiFi and the ability to act as a 3G Mobile hotspot (sometimes known as MiFi). The phone was released January 7, 2010, for the Verizon Wireless carrier network, and subsequently for AT&T Mobility, and was released on May 28, 2010, for O2 in the United Kingdom. Source: Wikipedia",
 			specs: [
 				{"name":"Introduced","value":"January 7, 2010 (Shipped: January 25, 2010)"},
@@ -83,8 +83,8 @@ this.data = {
 		{
                         name: "Palm Pre 2",
                         status: "Released 2010",
-                        icon: "assets/ml-pre2-small.png",
-                        photo: "assets/palmpre2.png",
+                        icon: "assets/pre2-icon.png",
+                        photo: "assets/pre2-photo.png",
                         history: "The Palm Pre 2, styled as palm prē 2, is a slider smartphone designed and marketed by Palm, Inc. and Hewlett-Packard. It was announced on October 19, 2010, with an initial launch date of October 22, 2010, on French carrier SFR. It was also announced that the Pre 2 would be coming to United States carrier Verizon Wireless, Rogers Wireless in Canada, and also as an unlocked UMTS developer phone. This was the first phone to ship with webOS 2.0 and flat Gorilla Glass screen (instead of plastic). Other improcements included a faster processor, an upgraded camera, and the removal of the plastic micro-usb cover. Source: Wikipedia",
                         specs: [
                                 {"name":"Introduced","value":"October 19, 2010 (Shipped: October 22, 2010)"},
@@ -103,8 +103,8 @@ this.data = {
 		{
                         name: "HP Veer",
                         status: "Released 2011",
-                        icon: "assets/ml-veer-small.png",
-                        photo: "assets/hpveer.png",
+                        icon: "assets/veer-icon.png",
+                        photo: "assets/veer-photo.png",
                         history: "The HP Veer was announced on February 9, 2011, along with the HP Pre 3 and the HP TouchPad. It was released in the US on May 15, 2011 on the AT&T network, and was marketed as the HP Veer 4G. It is powered by a Qualcomm Snapdragon processor, and has a 2.6-inch screen. This smartphone is notable for its credit card-sized dimensions (and a depth that is comparable to the size of a deck of cards). The device is seen as the successor in the Palm line-up to the Pixi and earlier Centro models. Source: Wikipedia",
                         specs: [
                                 {"name":"Introduced","value":"February 9, 2011 (Shipped: May 15, 2011)"},
@@ -123,8 +123,8 @@ this.data = {
 		{ 
 			name: "HP TouchPad",
                         status: "Released 2011",
-			icon: "assets/ml-touchpad-small.png",
-			photo: "assets/hptouchpad.png",
+			icon: "assets/touchpad-icon.png",
+			photo: "assets/touchpad-photo.png",
                         history: "The HP TouchPad was announced on February 9, 2011, at the webOS 'Think Beyond' event held at the Fort Mason Center in San Francisco alongside the HP Veer and HP Pre 3. Initial sales of the device were between 25,000 of 270,000 units, and did not meet HP's expectations, rapidly becoming overshadowed by the launch of the Apple iPad 2 in March. On August 16, 2011, it was reported that Best Buy refused to pay HP for any more TouchPad stock. In Europe, the TouchPad was estimated to have sold 12,000 in its first month of release. In Australia, Harvey Norman who was the exclusive retailer sold about 1,200 units in the four days it was on sale. On August 18, HP announced that it would discontinue all webOS devices. Following the announcement, HP also substantuially cut the price of the tablet in Canada and in the USA (16GB: $99, 32GB: $149). Similar firesales took place in Australia and the UK as well. This made the TouchPad the second most popular tablet for a brief period of time. Source: Wikipedia",
 			specs: [
 				{"name":"Introduced","value":"February 9, 2011 (Shipped: July 1, 2011)"},
@@ -142,8 +142,8 @@ this.data = {
 		{
                         name: "HP Pre 3",
                         status: "Released 2011",
-                        icon: "assets/ml-pre3-small.png",
-                        photo: "assets/hppre3.png",
+                        icon: "assets/pre3-icon.png",
+                        photo: "assets/pre3-photo.png",
                         history: "The HP Pre 3 was announced on February 9, 2011, at the HP webOS 'Think Beyond' event held at the Fort Mason Center in San Francisco alongside the Veer and TouchPad. It was commercially released in the United Kingdom on August 17, 2011. The next day, August 18, HP announced that it would be discontinuing all webOS devices, including the Pre 3. The phone was never officially released in the United States, although models eventually were sold through the HP employee store in California, and many of those phones ended up on eBay auctions. This was the highest spec webOS phone ever released. Source: Wikipedia",
                         specs: [
                                 {"name":"Introduced","value":"February 9, 2011 (Shipped: August 17, 2011)"},
@@ -162,8 +162,8 @@ this.data = {
 		{
                         name: "HP TouchPad 4G",
                         status: "Not Released",
-                        icon: "assets/ml-touchpad-small.png",
-                        photo: "assets/touchpad.png",
+                        icon: "assets/touchpad4g-icon.png",
+                        photo: "assets/touchpad4g-photo.png",
                         history: "The HP TouchPad was announced on February 9, 2011, at the webOS 'Think Beyond' event held at the Fort Mason Center in San Francisco alongside the HP Veer and HP Pre 3. This model included integrated A-GPS and AT&T 3.5G HSPA+ wireless mobile broadband capabilities. This model was produced in small quantities and it was only available to HP employees. Source: Wikipedia",
                         specs: [
                                 {"name":"Introduced","value":"February 9, 2011 (Shipped: July 1, 2011)"},
@@ -182,7 +182,7 @@ this.data = {
                         name: "HP TouchPad Go",
                         status: "Not Released",
                         icon: "assets/touchpadgo-icon.png",
-                        photo: "assets/touchpadgo.jpg",
+                        photo: "assets/touchpadgo-photo.png",
                         history: "The HP TouchPad Go was an unreleased smaller TouchPad variant. It had a smaller, 7 inch screen and a 5 megapixel rear-facing camera. It also included integrated A-GPS and AT&T 3.5G HSPA+ wireless mobile broadband capabilities. This model was produced in very small quantities and it was only available to HP employees. Source: Wikipedia and webOS Nation",
                         specs: [
                                 {"name":"Introduced","value":"February 9, 2011 (Shipped: July 1, 2011)"},
@@ -201,7 +201,7 @@ this.data = {
                         name: "HP 'WindsorNot'",
                         status: "Prototype",
                         icon: "assets/windsornot-icon.png",
-                        photo: "assets/windsornot.png",
+                        photo: "assets/windsornot-photo.png",
                         history: "The webOS slate smartphone that never was. The first webOS phone without a physical keyboard. Also the first webOS phone with webOS 3. This phone was only produced as engineering sample units. There is no known fully functional units. Source: webOS Nation",
                         specs: [
                                 {"name":"Introduced","value":"Unreleased (planned for 2011, this was moved to 2012"},
@@ -221,8 +221,8 @@ this.data = {
                         name: "HP 'Mako'",
                         status: "Planned",
                         icon: "assets/mako-icon.png",
-                        photo: "assets/mako.jpg",
-                        history: "TBD",
+                        photo: "assets/mako-photo.png",
+                        history: "HP was also working on a significantly more advanced phone [than the WindsorNot] codenamed \"Mako.\" The Verge obtained a design prototype of the device that reveals a new design direction eschewing the soft, nature-inspired pebble look of the Pre for something much more angular. It was to have a glass front and back, wireless charging, LTE, and a high-resolution screen. In terms of specs, we are told that it was to be about on par with the HTC One X, and had things gone according to plan it would have possibly been released in early 2012, beating the One X to market. Had Palm managed to pull it off, the Mako would have been one of the first Palm devices in a long time to feature competitive performance — albeit in a form that was still thicker than other devices at the time. However, development on the Mako never made it very far, and to our knowledge no working models ever got off the development board, much less into real-world testing. Source: The Verge.",
                         specs: [
                                 {"name":"Introduced","value":"Unreleased (planned for 2012)"},
                                 {"name":"Codename","value":"Mako"},

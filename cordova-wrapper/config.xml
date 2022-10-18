@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.enyo2.cordova.app" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>Enyo2App</name>
-    <description>Sample Enyo2 Cordova App</description>
-    <author email="dev@cordova.apache.org" href="https://cordova.apache.org">
+<widget id="eu.weboslives.webostracker" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>webOS Tracker</name>
+    <description>Palm and HP webOS Device Tracker</description>
+    <author email="curator@webosarchive.org" href="https://www.webosarchive.org">
         webOS Archive
     </author>
-    <icon src="www/img/icon-256.png" />
+    <icon src="www/icon-256.png" />
     <content src="index.html" />
     <allow-intent href="*" />
     <allow-navigation href="http://*/*" />

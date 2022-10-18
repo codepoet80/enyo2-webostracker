@@ -13,7 +13,7 @@ enyo.kind({
 	//	Note: webOS mobile uses the "onyx" widgets, webOS TVs use the "moonstone" widgets
 	components:[
 		{kind: "onyx.Toolbar", classes:"toolbar", components: [
-			/*{tag: "img", classes:"toolbarIcon", attributes: {src: "icon.png"}},*/
+			{tag: "img", classes:"toolbarIcon", attributes: {src: "icon-32.png"}},
 			{name: "toolTitle", content: "webOS Tracker" },
 		]},
 		{kind: "Panels", name:"contentPanels", fit: true, classes:"app-panels", narrowFit:false, arrangerKind: "CollapsingArranger", wrap: false, components: [
@@ -98,37 +98,33 @@ enyo.kind({
 	published: { },
 	components: [
 		{kind: "Scroller", name:"detailScroller", fit:true, classes:"disable-scrollbars", components: [	
-		{name: "title", classes:"title"},
+			{name: "title", classes:"title"},
 			{name: "main", allowHtml: true},
-				{kind: "onyx.Groupbox", name:"specsGroupbox", style:"height: 300px", components: [
-					{kind: "onyx.GroupboxHeader", content: "Specifications"},
-					{kind: "List", name:"list",style:"height: 300px",  onSetupItem: "setupItem", multiSelect:false, reorderable: false, enableSwipe: false, components: [
-						{name:"spec", style: "padding: 8px;border-bottom:1px solid gray;"}
-					]},
-				]},	
-	
-			]},
+			{kind: "onyx.Groupbox", name:"specsGroupbox", style:"height: 300px;", showing:false, components: [
+				{kind: "onyx.GroupboxHeader", content: "Specifications"},
+				{kind: "List", name:"list",style:"height: 300px",  onSetupItem: "setupItem", multiSelect:false, reorderable: false, enableSwipe: false, components: [
+					{name:"spec", style: "padding: 8px;border-bottom:1px solid gray;"}
+				]},
+			]},	
+		]},
 	],
 	setDevice: function(selectedDevice) {
+		this.$.specsGroupbox.setShowing(true);
 		this.currentDevice = selectedDevice;
 		this.$.title.setContent(selectedDevice.name);
 		this.$.main.setContent("<div class='history'><img class='photo' src='" + selectedDevice.photo + "' >");
 		this.$.main.addContent(selectedDevice.history);
 		this.$.main.addContent("</div>");
 		if (this.currentDevice) {
-			enyo.log("count is: " + this.currentDevice.specs.length);
 			this.$.list.setCount(this.currentDevice.specs.length);
 			this.$.list.reset();
 		}
 	},
 	setupItem: function(inSender, inEvent) {
-		enyo.log("building spec list!");
 		if (this.currentDevice) {
-			enyo.log("count is: " + this.currentDevice.specs.length);
 			//this.$.list.setCount(this.currentDevice.specs.length);
 			var i = inEvent.index;
 			var deviceSpec = this.currentDevice.specs[i];
-			enyo.log("showing " + deviceSpec.name + ": " + deviceSpec.value);
 			this.$.spec.setContent(deviceSpec.name + ": " + deviceSpec.value);
 		}
 		return true;
