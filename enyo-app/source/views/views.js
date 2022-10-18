@@ -13,7 +13,7 @@ enyo.kind({
 	//	Note: webOS mobile uses the "onyx" widgets, webOS TVs use the "moonstone" widgets
 	components:[
 		{kind: "onyx.Toolbar", classes:"toolbar", components: [
-			/*{tag: "img", classes:"toolbarIcon", attributes: {src: "icon.png"}},*/
+			{tag: "img", classes:"toolbarIcon", attributes: {src: "icon-32.png"}},
 			{name: "toolTitle", content: "webOS Tracker" },
 		]},
 		{kind: "Panels", name:"contentPanels", fit: true, classes:"app-panels", narrowFit:false, arrangerKind: "CollapsingArranger", wrap: false, components: [
