@@ -182,7 +182,7 @@ this.data = {
                         name: "HP TouchPad Go",
                         status: "Not Released",
                         icon: "assets/touchpadgo-icon.png",
-                        photo: "assets/touchpadgo-photo.jpg",
+                        photo: "assets/touchpadgo-photo.png",
                         history: "The HP TouchPad Go was an unreleased smaller TouchPad variant. It had a smaller, 7 inch screen and a 5 megapixel rear-facing camera. It also included integrated A-GPS and AT&T 3.5G HSPA+ wireless mobile broadband capabilities. This model was produced in very small quantities and it was only available to HP employees. Source: Wikipedia and webOS Nation",
                         specs: [
                                 {"name":"Introduced","value":"February 9, 2011 (Shipped: July 1, 2011)"},
