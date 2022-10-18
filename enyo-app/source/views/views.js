@@ -16,11 +16,11 @@ enyo.kind({
 			/*{tag: "img", classes:"toolbarIcon", attributes: {src: "icon.png"}},*/
 			{name: "toolTitle", content: "webOS Tracker" },
 		]},
-		{kind: "Panels", name:"contentPanels", fit: true, classes:"app-panels",  narrowFit:false, arrangerKind: "CollapsingArranger", wrap: false, components: [
-			{kind: "FittableRows", name:"itemList", classes:"list-devices-list", fit:true, components: [
+		{kind: "Panels", name:"contentPanels", fit: true, classes:"app-panels", narrowFit:false, arrangerKind: "CollapsingArranger", wrap: false, components: [
+			{kind: "FittableRows", name:"itemList", classes:"list-devices-list", components: [
 				{kind: "List", name:"list", count:data.devices.length, fit:true, classes: "list-devices", onSetupItem: "setupItem", multiSelect:false, reorderable: false, enableSwipe: false,
 					components: [
-						{name: 'item', kind: 'DeviceItem', classes: 'list-devices-item enyo-border-box',}
+						{name: 'item', kind: 'DeviceItem', classes: 'list-devices-item enyo-border-box'}
 					],
 				},
 				{kind: "onyx.Toolbar", classes:"toolbar", components: [
@@ -43,7 +43,7 @@ enyo.kind({
 	setupItem: function(inSender, inEvent) {
 		var i = inEvent.index;
 		var selectedDevice = data.devices[i];	//data comes from the data/data.js file
-		this.$.item.setDeviceDetails(selectedDevice.name, selectedDevice.icon);
+		this.$.item.setDeviceDetails(selectedDevice.name, selectedDevice.status, selectedDevice.icon);
 		//Handle item selection
 		this.$.item.setSelected(inSender.isSelected(i));
 		if (inSender.isSelected(i)) {
@@ -75,11 +75,13 @@ enyo.kind({
 		{name: "deviceIcon", kind: "Image", classes: "list-devices-icon"},
 		{components: [
 			{name: "deviceName"},
+			{name: "deviceStatus", classes: "deviceStatus"},
 		]},
 	],
 	//Public functions
-	setDeviceDetails: function(name, iconPath) {
+	setDeviceDetails: function(name, status, iconPath) {
 		this.$.deviceName.setContent(name);
+		this.$.deviceStatus.setContent(status);
 		this.$.deviceIcon.setSrc(iconPath);
 	},
 	setSelected: function(inSelected) {
@@ -89,25 +91,30 @@ enyo.kind({
 
 /** Device Details Panel **/
 enyo.kind({
-	kind: "Scroller",
+	kind: "FittableRows",
 	name: "DeviceDetails",
 	currentDevice: null,
 	event: { },
 	published: { },
 	components: [
-		{name: "main", allowHtml: true},
-		{kind: "onyx.Groupbox", components: [
-			{kind: "onyx.GroupboxHeader", content: "Specifications"},
-			/* TODO: figure out why I have to hard-code the list height */
-			{kind: "List", name:"list", style: "height:200px", onSetupItem: "setupItem", multiSelect:false, reorderable: false, enableSwipe: false, components: [
-				{name:"spec", style: "padding: 8px;border-bottom:1px solid gray;"}
+		{kind: "Scroller", name:"detailScroller", fit:true, classes:"disable-scrollbars", components: [	
+		{name: "title", classes:"title"},
+			{name: "main", allowHtml: true},
+				{kind: "onyx.Groupbox", name:"specsGroupbox", style:"height: 300px", components: [
+					{kind: "onyx.GroupboxHeader", content: "Specifications"},
+					{kind: "List", name:"list",style:"height: 300px",  onSetupItem: "setupItem", multiSelect:false, reorderable: false, enableSwipe: false, components: [
+						{name:"spec", style: "padding: 8px;border-bottom:1px solid gray;"}
+					]},
+				]},	
+	
 			]},
-		]},
 	],
 	setDevice: function(selectedDevice) {
 		this.currentDevice = selectedDevice;
-		this.$.main.setContent("<b>" + selectedDevice.name + "</b><br/>");
-		this.$.main.addContent("<img height='300' src='" + selectedDevice.photo + "'><br/>");
+		this.$.title.setContent(selectedDevice.name);
+		this.$.main.setContent("<div class='history'><img class='photo' src='" + selectedDevice.photo + "' >");
+		this.$.main.addContent(selectedDevice.history);
+		this.$.main.addContent("</div>");
 		if (this.currentDevice) {
 			enyo.log("count is: " + this.currentDevice.specs.length);
 			this.$.list.setCount(this.currentDevice.specs.length);
