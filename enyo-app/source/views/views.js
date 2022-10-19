@@ -28,13 +28,17 @@ enyo.kind({
 					/*{kind: "onyx.Button", content: "Load Devices", ontap: "loadDevicesTap"}*/
 				]},
 			]},
-			
 			{kind: "FittableRows", name:"body", classes:"detailAreaStyles", fit:true, components: [
 				{kind: "DeviceDetails", name: "details", classes: "details-area", fit:true },
 				{kind: "onyx.Toolbar", classes:"toolbar", components: [
 					{kind: 'onyx.Grabber', ondragstart: 'grabberDragstart', ondrag: 'grabberDrag', ondragfinish: 'grabberDragFinish'},
 				]},
-			]},
+			],
+			statics: {
+				isScreenNarrow: function() {
+					return enyo.dom.getWindowWidth() <= 600;
+				}
+			}},
 			
 		]},	
 	],
@@ -48,6 +52,8 @@ enyo.kind({
 		this.$.item.setSelected(inSender.isSelected(i));
 		if (inSender.isSelected(i)) {
 			this.$.details.setDevice(selectedDevice);
+			if(document.documentElement.clientWidth < 600)
+				this.$.contentPanels.next();
 		}
 		return true;
 	},
