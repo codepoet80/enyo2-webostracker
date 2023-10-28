@@ -12,6 +12,7 @@ enyo.kind({
 	//	See: examples with code here: http://www.webosarchive.org/enyo2sampler/ 
 	//	Note: webOS mobile uses the "onyx" widgets, webOS TVs use the "moonstone" widgets
 	components:[
+		{kind: 'wosa.updater', name:"myUpdater", onUpdateFound:"handleUpdateFound"},
 		{kind: "onyx.Toolbar", classes:"toolbar", components: [
 			{tag: "img", classes:"toolbarIcon", attributes: {src: "icon-32.png"}},
 			{name: "toolTitle", content: "webOS Tracker" },
@@ -33,15 +34,33 @@ enyo.kind({
 				{kind: "onyx.Toolbar", classes:"toolbar", components: [
 					{kind: 'onyx.Grabber', ondragstart: 'grabberDragstart', ondrag: 'grabberDrag', ondragfinish: 'grabberDragFinish'},
 				]},
-			],
+			], 
 			statics: {
-				isScreenNarrow: function() {
-					return enyo.dom.getWindowWidth() <= 600;
+					isScreenNarrow: function() {
+						return enyo.dom.getWindowWidth() <= 600;
+					}
 				}
-			}},
-			
+			},
+			{kind: "enyo.Popup", name: "popupModal", modal: true, autoDismiss: false, centered: true, classes: "popup", components: [
+				{name:"popupMessage", content: "", allowHtml:true},
+				{classes:"spacer"},
+				{kind: "enyo.Button", name: "buttonCloseModal", content: "Close", ontap: "closeModal"}
+			]},
 		]},	
 	],
+	rendered: enyo.inherit(function(sup) {
+		return function() {
+			sup.apply(this, arguments);
+			if (typeof device !== 'undefined' && device.platform) {
+				enyo.log("doing update check right away");
+				this.doUpdateCheck();
+			}
+			else {
+				enyo.log("doing update check when ready");
+				document.addEventListener('deviceready', this.doUpdateCheck.bind(this), false);
+			}
+		};
+	}),
 	//This function is called by the framework to populate the list
 	//	You can call it manually by invoking this.$.list.reset();
 	setupItem: function(inSender, inEvent) {
@@ -56,6 +75,17 @@ enyo.kind({
 				this.$.contentPanels.next();
 		}
 		return true;
+	},
+	doUpdateCheck: function() {
+		//Check for updates
+		this.$.myUpdater.CheckForUpdate("webOS Tracker");
+	},
+	handleUpdateFound: function(sender, message) {
+		this.showModal("Update found!<br>" + this.$.myUpdater.UpdateMessage + "<br>Visit your App Store to download it!");
+	},
+	showModal: function(message) {
+		this.$.popupMessage.setContent(message);
+		this.$.popupModal.setShowing(true);
 	},
 	/*
 	loadDevicesTap: function(inSender, inEvent) {
