@@ -207,7 +207,7 @@ this.data = {
                                 {"name":"Introduced","value":"Unreleased (planned for 2011, this was moved to 2012"},
                                 {"name":"Codename","value":"WindsorNot, stingray"},
                                 {"name":"Colors","value":"Black"},
-                                {"name":"Weight and Dimensions","value":"Unknown"},
+                                {"name":"Weight and Dimensions","value":"139 g (4.9 oz), W: 63.5 mm (2.5 in), H: 120.65 mm (4.75 in), D: 12.45 mm (0.49 in)"},
                                 {"name":"Screen Size","value":"4 in (102 mm)"},
                                 {"name":"Screen Resolution","value":"480x800"},
                                 {"name":"Chipset","value":"Qualcomm Snapdragon MSM8x55, CPU: 1.4 GHz Scorpion, GPU: 266 Mhz Adreno 205"},
