@@ -166,7 +166,7 @@ this.data = {
                         photo: "assets/touchpad4g-photo.png",
                         history: "The HP TouchPad was announced on February 9, 2011, at the webOS 'Think Beyond' event held at the Fort Mason Center in San Francisco alongside the HP Veer and HP Pre 3. This model included integrated A-GPS and AT&T 3.5G HSPA+ wireless mobile broadband capabilities. This model was produced in small quantities and it was only available to HP employees. Source: Wikipedia",
                         specs: [
-                                {"name":"Introduced","value":"February 9, 2011 (Shipped: July 1, 2011)"},
+                                {"name":"Introduced","value":"February 9, 2011 (planned for 2011)"},
                                 {"name":"Codename","value":"hp-tenderloin, topaz"},
                                 {"name":"Colors","value":"Black, White (rare)"},
                                 {"name":"Weight and Dimensions","value":"740 g (26 oz), W: 240 mm (9.4 in), H: 190 mm (7.5 in), D: 13.7 mm (0.54 in)"},
@@ -185,16 +185,16 @@ this.data = {
                         photo: "assets/touchpadgo-photo.png",
                         history: "The HP TouchPad Go was an unreleased smaller TouchPad variant. It had a smaller, 7 inch screen and a 5 megapixel rear-facing camera. It also included integrated A-GPS and AT&T 3.5G HSPA+ wireless mobile broadband capabilities. This model was produced in very small quantities and it was only available to HP employees. Source: Wikipedia and webOS Nation",
                         specs: [
-                                {"name":"Introduced","value":"February 9, 2011 (Shipped: July 1, 2011)"},
+                                {"name":"Introduced","value":"Unreleased (planned for 2011)"},
                                 {"name":"Codename","value":"hp-shortloin, opal"},
                                 {"name":"Colors","value":"Black, White (rare)"},
-                                {"name":"Weight and Dimensions","value":"499 g (17.6 oz), W: Unknown mm (Unknown in), H: Unknown mm (Unknown in), D: Unknown mm (Unknown in)"},
+                                {"name":"Weight and Dimensions","value":"463 g (16.3 oz), W: 182 mm (7.17 in), H: 145 mm (5.71 in), D: 14 mm (0.55 in)"},
                                 {"name":"Screen Size","value":"6.95 in (177 mm)"},
                                 {"name":"Screen Resolution","value":"1024x768"},
                                 {"name":"Chipset","value":"Qualcomm Snapdragon S3 APQ8060, CPU: 1.5 GHz dual-core ARM-based Scorpion, GPU: Adreno 220"},
                                 {"name":"Storage","value":"16 GB, 32 GB, and 64 GB"},
-                                {"name":"Default OS","value":"webOS 3.0.0"},
-                                {"name":"Max OS","value":"webOS 3.0.5"},
+                                {"name":"Default OS","value":"webOS 3.0.2"},
+                                {"name":"Max OS","value":"webOS 3.0.6"},
                         ]
                 },
 		{
@@ -207,7 +207,7 @@ this.data = {
                                 {"name":"Introduced","value":"Unreleased (planned for 2011, this was moved to 2012"},
                                 {"name":"Codename","value":"WindsorNot, stingray"},
                                 {"name":"Colors","value":"Black"},
-                                {"name":"Weight and Dimensions","value":"Unknown"},
+                                {"name":"Weight and Dimensions","value":"139 g (4.9 oz), W: 63.5 mm (2.5 in), H: 120.65 mm (4.75 in), D: 12.45 mm (0.49 in)"},
                                 {"name":"Screen Size","value":"4 in (102 mm)"},
                                 {"name":"Screen Resolution","value":"480x800"},
                                 {"name":"Chipset","value":"Qualcomm Snapdragon MSM8x55, CPU: 1.4 GHz Scorpion, GPU: 266 Mhz Adreno 205"},
