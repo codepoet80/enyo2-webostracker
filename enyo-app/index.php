@@ -27,6 +27,6 @@ echo file_get_contents("https://www.webosarchive.org/app-template/header.php?doc
     </table>
     <p>webOS Tracker is open source! Code and Releases can be found here:
     <table style="margin-left:20%;margin-right:20%;font-size:small;">
-        <tr><td align="center"><a href="https://github.com/codepoet80/enyo2-webostracker">PWA code, including Android, webOS and LuneOS</a></td></tr>
+        <tr><td align="center"><a href="https://github.com/codepoet80/enyo2-webostracker">Source code, including PWA, Android, webOS and LuneOS</a></td></tr>
     </div>
 </body>
