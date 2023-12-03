@@ -12,7 +12,7 @@ $pwaLink = "https://store.app/tracker-wosa-link";
 $playId = "eu.weboslives.webostracker";
 $playLink = "https://play.google.com/store/apps/details?id=" . $playId;
 $museumLink = "https://appcatalog.webosarchive.org/app/webOSTracker";
-$icon = "https://www.webosarchive.org/tracker/icons/icon-128.png";
+$icon = "enyo-app/icons/icon-128.png";
 
 //Figure out what protocol the client wanted
 if(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on') {
