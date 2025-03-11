@@ -9,8 +9,6 @@ $subtitle = " | Every webOS mobile device made (or not!)";
 $description = "webOS Tracker provides detailed information on Palm webOS and HP Palm phones and tablets.";
 $github = "https://github.com/codepoet80/enyo2-webostracker";
 $pwaLink = "https://store.app/tracker-wosa-link";
-$playId = "eu.weboslives.webostracker";
-$playLink = "https://play.google.com/store/apps/details?id=" . $playId;
 $museumLink = "https://appcatalog.webosarchive.org/app/webOSTracker";
 $icon = "enyo-app/icons/icon-128.png";
 
@@ -37,7 +35,6 @@ if(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on') {
   <meta name="twitter:site" content="@webOSArchive">
   <meta name="twitter:title" content="<?php echo $title; ?>">
   <meta name="twitter:description" content="<?php echo $description; ?>">
-  <meta name="twitter:app:id:googleplay" content="<?php echo $playId?>">
 
   <title><?php echo $title . $subtitle; ?></title>
   
@@ -62,11 +59,6 @@ echo file_get_contents("https://www.webosarchive.org/menu.php?docRoot=" . $docRo
         <?php if (isset($pwaLink)) { ?>
         <a class="download-link" href="<?php echo $pwaLink; ?>">
           <img src="<?php echo $PROTOCOL . "://www.webosarchive.org/app-template/"?>pwa-badge.png" width="200" height="59" alt="Launch the PWA" />
-        </a>
-        <?php } ?>
-        <?php if (isset($playLink)) { ?>
-        <a class="download-link" href="<?php echo $playLink; ?>">
-          <img src="<?php echo $PROTOCOL . "://www.webosarchive.org/app-template/"?>play-badge.png" width="200" height="59" alt="Get it on Google play" />
         </a>
         <?php } ?>
         <?php if (isset($museumLink)) { ?>
