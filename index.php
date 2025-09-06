@@ -8,7 +8,7 @@ $title = "webOS Tracker";
 $subtitle = " | Every webOS mobile device made (or not!)";
 $description = "webOS Tracker provides detailed information on Palm webOS and HP Palm phones and tablets.";
 $github = "https://github.com/codepoet80/enyo2-webostracker";
-$pwaLink = "https://store.app/tracker-wosa-link";
+$pwaLink = "http://weboslives.eu/tracker";
 $museumLink = "https://appcatalog.webosarchive.org/app/webOSTracker";
 $icon = "enyo-app/icons/icon-128.png";
 
