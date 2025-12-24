@@ -38,7 +38,7 @@ if(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on') {
 
   <title><?php echo $title . $subtitle; ?></title>
   
-  <link id="favicon" rel="icon" type="image/png" sizes="64x64" href="<?php echo $icon;?>">
+  <link id="favicon" rel="icon" type="image/png" sizes="64x64" href="/<?php echo $icon;?>">
   <link href="<?php echo $PROTOCOL . "://www.webosarchive.org/app-template/"?>web.css" rel="stylesheet" type="text/css" >
 </head>
 <body>
