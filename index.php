@@ -3,21 +3,23 @@
 <?php
 //This file is only used for advertising on a hosting webserver
 
-//App Details
-$title = "webOS Tracker";
-$subtitle = " | Every webOS mobile device made (or not!)";
-$description = "webOS Tracker provides detailed information on Palm webOS and HP Palm phones and tablets.";
-$github = "https://github.com/codepoet80/enyo2-webostracker";
-$pwaLink = "http://weboslives.eu/tracker";
-$museumLink = "https://appcatalog.webosarchive.org/app/webOSTracker";
-$icon = "enyo-app/icons/icon-128.png";
-
 //Figure out what protocol the client wanted
 if(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on') {
 	$PROTOCOL = "https";
 } else {
 	$PROTOCOL = "http";
 }
+
+//App Details
+$title = "webOS Tracker";
+$subtitle = " | Every webOS mobile device made (or not!)";
+$description = "webOS Tracker provides detailed information on Palm webOS and HP Palm phones and tablets.";
+$homeLink = $PROTOCOL."://www.webosarchive.org/tracker/";
+$github = "https://github.com/codepoet80/enyo2-webostracker";
+$pwaLink = $PROTOCOL."://weboslives.eu/tracker";
+$museumLink = $PROTOCOL."://appcatalog.webosarchive.org/app/webOSTracker";
+$icon = "enyo-app/icons/icon-128.png";
+
 ?>
 <head>
   <meta charset="utf-8">
@@ -29,7 +31,7 @@ if(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on') {
   <meta name="author" content="webOS Archive">
   <meta property="og:title" content="<?php echo $title; ?>">
   <meta property="og:description" content="<?php echo $description; ?>">
-  <meta property="og:image" content="https://<?php echo $_SERVER['SERVER_NAME'] ?>/hero.png">
+  <meta property="og:image" content="<?php echo $homeLink ?>hero.png">
 
   <meta name="twitter:card" content="app">
   <meta name="twitter:site" content="@webOSArchive">
@@ -38,7 +40,7 @@ if(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on') {
 
   <title><?php echo $title . $subtitle; ?></title>
   
-  <link id="favicon" rel="icon" type="image/png" sizes="64x64" href="/<?php echo $icon;?>">
+  <link id="favicon" rel="icon" type="image/png" sizes="64x64" href="<?php echo $homeLink.$icon;?>">
   <link href="<?php echo $PROTOCOL . "://www.webosarchive.org/app-template/"?>web.css" rel="stylesheet" type="text/css" >
 </head>
 <body>
